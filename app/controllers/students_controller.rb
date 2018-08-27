@@ -19,7 +19,6 @@ class StudentsController < ApplicationController
     @student.save
     redirect_to student_path(@student)
   end
-  
 
   private
 
