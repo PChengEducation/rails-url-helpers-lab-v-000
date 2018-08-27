@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :students, only: [:index, :show]
 
-  get 'student/:id/activate', to: 'students#activate', :as 'activate_student'
+  get 'student/:id/activate', to: 'students#activate', as: 'activate_student'
 
   # This show route can be refactored into the above resouces' method call above, like so:
   # resources :students, only: [:index, :show]
